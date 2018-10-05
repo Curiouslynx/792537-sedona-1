@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <script>if(navigator.userAgent.indexOf("WebKit")!==-1)window.onfocus=function(){location.reload()}</script>
+  </head>
+  <body>
+
+    <header class="page-header">
+
+      <nav class="main-nav">
+
+        <a class="main-nav__logo-link">
+          <img class="main-nav__logo-image" src="img/logo.svg" alt="Логотип Седона" width="102" height="83">
+        </a>
+
+        <button class="main-nav__toggle-btn" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list menu">
+          <li class="menu__item"><a>Главная</a></li>
+          <li class="menu__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="menu__item"><a href="academy.html">HTML Academy</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Седона - фото и видео</h1>
+
+      <section class="welcome-short">
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+        <img class="welcome-short__svg-text" src="http://placehold.it/320x160" width="320" height="160" alt="Добро пожаловать в Седону">
+      </section>
+
+      <section class="gallery">
+
+        <h2>Фото и видео</h2>
+
+        <p class="">Не можете решиться на путешествие из-за курса?
+        Фотографии помогут вам забыть о политике и экономике.</p>
+
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__img" src="http://placehold.it/280x280" alt="" width="280" height="280">
+            </a>
+            <h3 class="gallery__img-header">Неродные просторы</h3>
+            <p class="gallery__img-author">Автор фото: Борис</p>
+            <p class="gallery__likes">
+              <span class="gallery__likes-icon"></span>
+              <span class="gallery__likes-counter">1350</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__img" src="http://placehold.it/280x280" alt="" width="280" height="280">
+            </a>
+            <h3 class="gallery__img-header">Местная растительность</h3>
+            <p class="gallery__img-author">Автор фото: Сергей</p>
+            <p class="gallery__likes">
+              <span class="gallery__likes-icon"></span>
+              <span class="gallery__likes-counter">143</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__img" src="http://placehold.it/280x280" alt="" width="280" height="280">
+            </a>
+            <h3 class="gallery__img-header">Дорога на Север</h3>
+            <p class="gallery__img-author">Автор фото: Петр</p>
+            <p class="gallery__likes">
+              <span class="gallery__likes-icon"></span>
+              <span class="gallery__likes-counter">96</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__img" src="http://placehold.it/280x280" alt="" width="280" height="280">
+            </a>
+            <h3 class="gallery__img-header">Мост дьявола</h3>
+            <p class="gallery__img-author">Автор фото: Антон</p>
+            <p class="gallery__likes">
+              <span class="gallery__likes-icon"></span>
+              <span class="gallery__likes-counter">254</span>
+            </p>
+          </li>
+        </ul>
+
+        <div class="gallery__video video">
+          <h3 class="video__header">Все еще сомневаетесь?</h3>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами,
+          пока они не подорожали в очередной раз!</p>
+          <video width="320" controls poster="http://placehold.it/320x260">
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogv" type="video/ogg">
+            <source src="video.webm" type="video/webm">
+            Ваш браузер не поддерживает HTML5-видео.
+          </video>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__hashtag">
+        <a href="https://twitter.com/hashtag/visitsedona" target="_blank">#visitsedona</a>
+      </div>
+      <div class="page-footer__social social">
+        <a class="social__link social__link--twitter" href="#" target="_blank">Twitter</a>
+        <a class="social__link social__link--facebook" href="#" target="_blank">Facebook</a>
+        <a class="social__link social__link--youtube" href="#" target="_blank">Youtube</a>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
