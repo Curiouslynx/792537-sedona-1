@@ -1,0 +1,84 @@
+@charset 'utf-8';
+
+@import 'mixins';
+@import 'variables';
+
+@import 'normalize';
+@import 'page-main';
+@import 'main-nav';
+@import 'menu';
+@import 'welcome';
+@import 'advantages';
+@import 'features';
+@import 'hotel-search';
+@import 'map';
+@import 'page-footer';
+@import 'gallery';
+@import 'video';
+@import 'feedback';
+
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: normal;
+  font-style: normal;
+  src:
+    url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans Bold';
+  font-weight: bold;
+  font-style: normal;
+  src:
+    url('../fonts/ptsansbold.woff2') format('woff2'),
+    url('../fonts/ptsansbold.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  width:320px;
+  margin:0 auto;
+}
+
+.button {
+  color: white;
+  background-color: $mastercolor;
+  border: none;
+  @include masterfont;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}

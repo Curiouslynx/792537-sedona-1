@@ -1,0 +1,21 @@
+.main-nav {}
+
+.main-nav__logo-image {
+  position: absolute;
+  left: 50%;
+}
+
+.main-nav__toggle-btn {
+  margin: 0;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  font-size: 0;
+  background-color: #ffffff;
+  background-image: url(../img/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+}
+
+.main-nav__list {}

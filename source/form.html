@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <script>if(navigator.userAgent.indexOf("WebKit")!==-1)window.onfocus=function(){location.reload()}</script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="wrapper">
 
     <header class="page-header">
 
       <nav class="main-nav">
 
-        <a class="main-nav__logo-link">
-          <img class="main-nav__logo-image" src="img/logo.svg" alt="Логотип Седона" width="102" height="83">
+        <a class="main-nav__logo-link" href="index.html">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
         </a>
 
         <button class="main-nav__toggle-btn" type="button">Открыть меню</button>
 
         <ul class="main-nav__list menu">
-          <li class="menu__item"><a>Главная</a></li>
+          <li class="menu__item"><a href="index.html">Главная</a></li>
           <li class="menu__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="menu__item"><a>Форма отзыва</a></li>
           <li class="menu__item"><a href="academy.html">HTML Academy</a></li>
         </ul>
 
@@ -34,7 +34,7 @@
 
       <section class="welcome-short">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="welcome-short__svg-text" src="http://placehold.it/320x160" width="320" height="160" alt="Добро пожаловать в Седону">
+        <img class="welcome-short__svg-text" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону">
       </section>
 
       <section class="feedback">
@@ -48,23 +48,23 @@
           <fieldset class="feedback__form-fieldset">
             <legend class="feedback__form-legend">Представьтесь:</legend>
 
-              <label for="name" class="feedback__form-label">Имя*</label>
+              <label for="name" class="feedback__form-label">Имя*:</label>
               <input id="name" class="feedback__form-input" type="text" name="name" placeholder="Петр" required>
 
-              <label for="surname" class="feedback__form-label">Фамилия*</label>
+              <label for="surname" class="feedback__form-label">Фамилия*:</label>
               <input id="surname" class="feedback__form-input" type="text" name="surname" placeholder="Иванов" required>
 
-              <label for="patronymic" class="feedback__form-label">Отчество</label>
+              <label for="patronymic" class="feedback__form-label">Отчество:</label>
               <input id="patronymic" class="feedback__form-input" type="text" name="patronymic" placeholder="Александрович">
 
           </fieldset>
           <fieldset class="feedback__form-fieldset">
             <legend class="feedback__form-legend">Контактная информация:</legend>
 
-            <label for="phone" class="feedback__form-label">Контактный телефон*</label>
+            <label for="phone" class="feedback__form-label">Контактный телефон*:</label>
             <input id="phone" class="feedback__form-input feedback__form-input--phone" type="text" name="phone" placeholder="Введите телефон" required>
 
-            <label for="email" class="feedback__form-label">Электронная почта*</label>
+            <label for="email" class="feedback__form-label">Электронная почта*:</label>
             <input id="email" class="feedback__form-input feedback__form-input--email" type="text" name="email" placeholder="Введите e-mail" required>
 
           </fieldset>
@@ -99,7 +99,7 @@
           </fieldset>
           <fieldset class="feedback__form-fieldset">
             <legend class="feedback__form-legend">Опишите свои эмоции:</legend>
-            <textarea name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback__form-text" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback__submit-btn button" type="submit">Отправить отзыв</button>
         </form>
@@ -118,7 +118,8 @@
         <a class="social__link social__link--youtube" href="#" target="_blank">Youtube</a>
       </div>
       <div class="page-footer__copyright">
-        Разработано <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          Разработано
           <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>

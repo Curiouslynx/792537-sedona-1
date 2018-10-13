@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <script>if(navigator.userAgent.indexOf("WebKit")!==-1)window.onfocus=function(){location.reload()}</script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="wrapper">
 
     <header class="page-header">
 
       <nav class="main-nav">
 
         <a class="main-nav__logo-link">
-          <img class="main-nav__logo-image" src="img/logo.svg" alt="Логотип Седона" width="102" height="83">
+          <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
         </a>
 
         <button class="main-nav__toggle-btn" type="button">Открыть меню</button>
@@ -34,24 +34,24 @@
 
       <section class="welcome">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <img class="welcome__svg-text" src="http://placehold.it/320x389" width="320" height="389" alt="Добро пожаловать в Седону">
+        <img class="welcome__svg-text" src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
       </section>
 
       <section class="advantages">
 
         <h2 class="visually-hidden">Уникальные преимущества Седоны</h2>
 
-        <p class="advantages__text advantages__text--bold">Седона &mdash; небольшой городок в аризоне, заслуживающий большего!</p>
+        <p class="advantages__text advantages__text--bold">Седона &ndash; небольшой городок в аризоне, заслуживающий большего!</p>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
         <div class="advantages__item advantages__item--blue">
           <h3 class="advantages__item-header">Настоящий городок</h3>
-          <span class="advantages__item-number">&mdash; №1 &mdash;</span>
-          <p class="advantages__item-text">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+          <span class="advantages__item-number">&ndash; №1 &ndash;</span>
+          <p class="advantages__item-text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
 
         <div class="advantages__photo">
-          <img src="http://placehold.it/320x260" width="320" height="260" alt="Ресторан Open Range Grill & Tavern">
+          <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Ресторан Open Range Grill & Tavern">
         </div>
 
         <ul class="advantages__list features">
@@ -71,29 +71,29 @@
 
         <div class="advantages__item advantages__item--blue">
           <h3 class="advantages__item-header">Там есть мост дьявола</h3>
-          <span class="advantages__item-number">&mdash; №2 &mdash;</span>
+          <span class="advantages__item-number">&ndash; №2 &ndash;</span>
           <p class="advantages__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
 
         <div class="advantages__photo">
-          <img src="http://placehold.it/320x260" width="320" height="260" alt="Пейзаж Седоны">
+          <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Пейзаж Седоны">
         </div>
 
         <div class="advantages__item advantages__item--gray">
           <h3 class="advantages__item-header">Небольшая площадь</h3>
-          <span class="advantages__item-number">&mdash; №3 &mdash;</span>
+          <span class="advantages__item-number">&ndash; №3 &ndash;</span>
           <p class="advantages__item-text">Все интересные места находятся очень близко</p>
         </div>
 
         <div class="advantages__item advantages__item--gray">
           <h3 class="advantages__item-header">Красивая дорога</h3>
-          <span class="advantages__item-number">&mdash; №4 &mdash;</span>
+          <span class="advantages__item-number">&ndash; №4 &ndash;</span>
           <p class="advantages__item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
 
         <div class="advantages__item advantages__item--gray">
           <h3 class="advantages__item-header">Мало туристов</h3>
-          <span class="advantages__item-number">&mdash; №5 &mdash;</span>
+          <span class="advantages__item-number">&ndash; №5 &ndash;</span>
           <p class="advantages__item-text">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
 
@@ -108,7 +108,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
-        <img src="http://placehold.it/320x260" alt="США, штата Аризона, город Седона" width="320" height="350">
+        <img src="img/bg-map-mobile@1x.jpg" alt="США, штата Аризона, город Седона" width="320" height="350">
       </section>
 
     </main>
@@ -123,7 +123,8 @@
         <a class="social__link social__link--youtube" href="#" target="_blank">Youtube</a>
       </div>
       <div class="page-footer__copyright">
-        Разработано <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          Разработано
           <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
