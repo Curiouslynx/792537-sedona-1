@@ -1,13 +1,10 @@
-.welcome {
-  height: 389px;
-  text-align: center;
-  background-color: #dceaf2;
+.welcome-short {
   background-image:
     url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
   background-position:
     center bottom,
-    center center;
+    center bottom;
   background-repeat:
     no-repeat,
     no-repeat;
@@ -16,6 +13,7 @@
     auto 100%;
 }
 
-.welcome__svg-text {
-  margin: 90px auto 0;
+.welcome-short__svg-text {
+  margin-top: 52px;
+  margin-bottom: 67px;
 }

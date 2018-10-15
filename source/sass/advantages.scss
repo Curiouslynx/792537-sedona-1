@@ -1,6 +1,6 @@
 .advantages {
-  padding: 0 0 0 0;
   @include masterfont;
+  padding: 0 0 0 0;
 }
 
 .advantages__text {
@@ -45,4 +45,8 @@
 
 .advantages__item--gray {
   background-color: #efefef;
+}
+
+.advantages__item--gray .advantages__item-header {
+  margin-top: 33px;
 }

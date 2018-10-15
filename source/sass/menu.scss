@@ -1,11 +1,7 @@
 .menu {
   @include masterfont;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include ulreset;
 }
-
-.menu__item {}
 
 .menu__item a {
   display: block;
