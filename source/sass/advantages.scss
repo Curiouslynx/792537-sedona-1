@@ -15,6 +15,15 @@
   line-height: 26px;
 }
 
+.advantages__list {
+  position: relative;
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-top: 34px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
 .advantages__item {
   border: 1px solid transparent;
 }
@@ -43,10 +52,10 @@
   display: block;
 }
 
-.advantages__item--gray {
+.advantages__item--silver {
   background-color: #efefef;
 }
 
-.advantages__item--gray .advantages__item-header {
+.advantages__item--silver .advantages__item-header {
   margin-top: 33px;
 }
