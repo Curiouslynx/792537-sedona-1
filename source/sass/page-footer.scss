@@ -1,0 +1,22 @@
+.page-footer {
+  @include masterfont;
+}
+
+.page-footer__hashtag a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-footer__copyright a {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-footer__social {
+  margin: 40px auto;
+}

@@ -1,0 +1,30 @@
+.gallery {
+  @include masterfont;
+}
+
+.gallery__header {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.gallery__list {
+  @include ulreset;
+}
+
+.gallery__img-header {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__img-author {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.gallery__likes {
+  text-align: left;
+}
