@@ -2,10 +2,22 @@
   @include masterfont;
 }
 
+.feedback__form {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .feedback__header {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .feedback__intro {
@@ -14,8 +26,31 @@
 }
 
 .feedback__form-fieldset {
+  margin: 0;
   border: none;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    outline: 1px dotted silver;
+    width: 100%;
+  }
+}
+
+.feedback__form-fieldset--first {
+  order: -10;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.feedback__form-fieldset--second {
+  @media (min-width: $tablet) {
+    order: -9;
+    width: 50%;
+  }
 }
 
 .feedback__form-legend {

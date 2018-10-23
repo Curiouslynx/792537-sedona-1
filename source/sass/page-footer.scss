@@ -1,5 +1,16 @@
 .page-footer {
   @include masterfont;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.page-footer__hashtag {
+  @media (min-width: $tablet) {
+    margin-left: $sidespace;
+  }
 }
 
 .page-footer__hashtag a {
@@ -8,6 +19,12 @@
   font-weight: bold;
   color: #000000;
   text-decoration: none;
+}
+
+.page-footer__copyright {
+  @media (min-width: $tablet) {
+    margin-right: $sidespace;
+  }
 }
 
 .page-footer__copyright a {

@@ -14,6 +14,15 @@
   background-size:
     105% auto,
     auto auto;
+
+  @media (min-width: $tablet) {
+    background-image:
+      url("../img/bg-intro-triangle-tablet.svg"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-size:
+      100% auto,
+      auto auto;
+  }
 }
 
 .welcome__svg-text {
@@ -22,6 +31,10 @@
 
 .welcome--short {
   height: auto;
+
+  @media (min-width: $tablet) {
+    height: 290px;
+  }
 }
 
 .welcome__svg-text--short {

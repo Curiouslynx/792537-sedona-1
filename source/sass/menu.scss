@@ -1,6 +1,25 @@
 .menu {
   @include masterfont;
   @include ulreset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.menu__item {
+  @media (min-width: $tablet) {
+    width: 20%;
+  }
+}
+
+.menu__item:nth-child(2) {
+  @media (min-width: $tablet) {
+    margin-right: 20%;
+  }
 }
 
 .menu__item a {
@@ -14,4 +33,11 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
