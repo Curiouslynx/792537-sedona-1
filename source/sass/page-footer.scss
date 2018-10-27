@@ -3,13 +3,16 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: flex-end;
   }
 }
 
 .page-footer__hashtag {
   @media (min-width: $tablet) {
     margin-left: $sidespace;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: $side-space-desktop;
   }
 }
 
@@ -24,6 +27,10 @@
 .page-footer__copyright {
   @media (min-width: $tablet) {
     margin-right: $sidespace;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: $side-space-desktop;
   }
 }
 

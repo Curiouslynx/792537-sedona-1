@@ -1,9 +1,18 @@
 .video {
   @include masterfont;
+
+  @media (min-width: $desktop) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 .video__header {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+}
+
+.video video {
+  width: 100%;
 }

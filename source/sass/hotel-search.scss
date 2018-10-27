@@ -17,4 +17,8 @@
   margin: 40px auto;
   width: 280px;
   min-height: 58px;
+
+  @media (min-width: $tablet) {
+    width: 458px;
+  }
 }

@@ -24,11 +24,13 @@
 
 .menu__item a {
   display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: $menubgcolor;
   border-top: 1px solid $menubordertopcolor;
   border-bottom: 1px solid $menuborderbottomcolor;
   font-size: 18px;
-  line-height: 54px;
+  line-height: 26px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;

@@ -33,6 +33,17 @@
   margin: 0;
 }
 
+.advantages__swap {
+  @media (min-width: $tablet) {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.advantages__swap > .advantages__photo {
+  order: -11;
+}
+
 .advantages__item {
   border: 1px solid transparent;
 }
