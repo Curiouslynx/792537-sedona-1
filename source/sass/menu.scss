@@ -1,17 +1,45 @@
 .menu {
   @include masterfont;
   @include ulreset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.menu__item {
+  @media (min-width: $tablet) {
+    width: 20%;
+  }
+}
+
+.menu__item:nth-child(2) {
+  @media (min-width: $tablet) {
+    margin-right: 20%;
+  }
 }
 
 .menu__item a {
   display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: $menubgcolor;
   border-top: 1px solid $menubordertopcolor;
   border-bottom: 1px solid $menuborderbottomcolor;
   font-size: 18px;
-  line-height: 54px;
+  line-height: 26px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+  }
 }

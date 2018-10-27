@@ -1,33 +1,137 @@
 .feedback {
   @include masterfont;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    padding-left: $sidespace;
+    padding-right: $sidespace;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: $side-space-desktop;
+    padding-right: $side-space-desktop;
+  }
+}
+
+.feedback__box {
+  display: flex;
+  align-items: center;
+}
+
+.feedback__box .feedback__form-input {
+  width: 100%;
+}
+
+.feedback__box-input {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 25%;
+  }
+}
+
+.feedback__flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__form {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .feedback__header {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-top: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 108px;
+    margin-bottom: 32px;
+  }
 }
 
 .feedback__intro {
+  margin-bottom: 84px;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $desktop) {
+    margin-left: 27%;
+    margin-right: 27%;
+  }
 }
 
 .feedback__form-fieldset {
   border: none;
   text-align: left;
+  margin: 0; /* сброс браузерных */
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin-top: 44px;
+  }
+}
+
+.feedback__form-fieldset--first {
+  @media (min-width: $tablet) {
+    order: -10;
+    width: 50%;
+  }
+}
+
+.feedback__form-fieldset--second {
+  @media (min-width: $tablet) {
+    order: -9;
+    width: 50%;
+  }
 }
 
 .feedback__form-legend {
+  width: 100%;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    margin-bottom: 44px;
+  }
 }
 
 .feedback__form-label {
   font-size: 14px;
   line-height: 26px;
+}
+
+.feedback__form-label--phone {
+  @media (min-width: $desktop) {
+    margin-right: 16px;
+  }
+}
+
+.feedback__form-label--email {
+  @media (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: 16px;
+  }
 }
 
 .feedback__form-input::placeholder {
@@ -50,10 +154,18 @@
 
 .feedback__form-input--phone {
   width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 30%;
+  }
 }
 
 .feedback__form-input--email {
   width: 100%;
+
+  @media (min-width: $desktop) {
+    width: 30%;
+  }
 }
 
 .feedback__form-text {
@@ -63,7 +175,7 @@
   font-size: 18px;
   line-height: 26px;
   padding: 20px;
-  width: 279px;
+  width: 100%;
   height: 160px;
 }
 
@@ -90,4 +202,10 @@
   width: 280px;
   min-height: 58px;
   margin: 51px auto;
+}
+
+.feedback__visibility-marker {
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
