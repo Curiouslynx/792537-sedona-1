@@ -1,35 +1,127 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
-.main-nav__list {
-  order: -1;
-
-  @media (min-width: $tablet) {
-    order: inherit;
-  }
-}
-
-.main-nav__logo-image {
+.main-nav__logo-link {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet) {
+    top: 0;
+  }
+}
+
+.main-nav__btn-wrapper {
+  min-height: 56px;
+  display: flex;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__toggle-btn {
+  position: relative;
   margin-left: auto;
-  padding: 0;
   width: 56px;
   height: 56px;
-  font-size: 0;
-  background-color: #ffffff;
+  background-color: transparent;
+  /*прежний вариант на svg:
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center;*/
   border: none;
 
   @media (min-width: $tablet) {
     display: none;
   }
+}
+
+.main-nav__toggle-btn::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 17px;
+
+  width: 23px;
+  height: 4px;
+
+  background-color: #81b3d2;
+  box-shadow:
+    0 9px 0 0 #81b3d2,
+    0 18px 0 0 #81b3d2;
+}
+
+.main-nav__toggle-btn--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-nav__toggle-btn--close::before {
+  background-color: #ffffff;
+  box-shadow: none;
+  transform: rotate(45deg);
+}
+
+.main-nav__toggle-btn--close::after {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 17px;
+
+  width: 23px;
+  height: 4px;
+
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}
+
+.main-nav__container {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__container {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle-btn {
+  display: none;
+}
+
+.main-nav--opened .main-nav__container {
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.main-nav--opened .main-nav__toggle-btn::before {
+  background-color: #ffffff;
+  box-shadow: none;
+  transform: rotate(45deg);
+  width: 27px;
+  height: 4px;
+}
+
+.main-nav--opened .main-nav__toggle-btn::after {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 17px;
+
+  width: 27px;
+  height: 4px;
+
+  background-color: #ffffff;
+  transform: rotate(-45deg);
 }
