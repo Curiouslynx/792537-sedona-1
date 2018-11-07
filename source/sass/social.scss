@@ -9,6 +9,7 @@
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-right: 2px;
 }
 
 .social__link--twitter {
@@ -21,4 +22,8 @@
 
 .social__link--youtube {
   background-image: url("../img/icon-youtube.svg");
+
+  @media (min-width: $tablet) {
+    margin-right: 18px;
+  }
 }
