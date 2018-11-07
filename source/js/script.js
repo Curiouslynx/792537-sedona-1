@@ -1,9 +1,7 @@
 var nav = document.querySelector(".main-nav");
-var menu = document.querySelector(".menu");
-var btn = document.querySelector(".main-nav__toggle-btn");
-
 nav.classList.remove("main-nav--nojs");
 
+var btn = document.querySelector(".main-nav__toggle-btn");
 btn.addEventListener("click", function(evt) {
   if(!nav.classList.contains("main-nav--opened")) {
     nav.classList.add("main-nav--opened");

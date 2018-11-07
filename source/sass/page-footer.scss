@@ -7,12 +7,16 @@
 }
 
 .page-footer__hashtag {
+  margin-top: 28px;
+
   @media (min-width: $tablet) {
     margin-left: $sidespace;
+    margin-top: 48px;
   }
 
   @media (min-width: $desktop) {
     margin-left: $side-space-desktop;
+    margin-top: 40px;
   }
 }
 
@@ -27,6 +31,7 @@
 .page-footer__copyright {
   @media (min-width: $tablet) {
     margin-right: $sidespace;
+    margin-top: 32px;
   }
 
   @media (min-width: $desktop) {
@@ -42,5 +47,9 @@
 }
 
 .page-footer__social {
-  margin: 40px auto;
+  margin: 38px auto;
+
+  @media (min-width: $desktop) {
+    margin-top: 30px;
+  }
 }
